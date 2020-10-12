@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "simplewallet-executor",
+    "name": "simplewallet",
+    "region": "ap-southeast-1"
+  },
+  "api": {
+    "id": "ee4z9lcs79",
+    "url": "https://ee4z9lcs79.execute-api.ap-southeast-1.amazonaws.com/latest"
+  }
+}

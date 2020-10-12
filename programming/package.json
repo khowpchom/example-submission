@@ -1,0 +1,25 @@
+{
+  "name": "simplewallet",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "create-api": "claudia create --handler lambda.handler --deploy-proxy-api --region ap-southeast-1",
+    "update-api": "claudia update"
+  },
+  "dependencies": {
+    "aws-serverless-express": "^3.3.8",
+    "claudia": "^5.12.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mariadb": "^2.4.2",
+    "morgan": "~1.9.1",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "claudia": "^5.12.0"
+  }
+}

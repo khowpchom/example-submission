@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "password",
+    "database": "simplewallet",
+    "host": "simplewallet.ch8k2cbrcaqx.ap-southeast-1.rds.amazonaws.com",
+    "dialect": "mariadb"
+  },
+  "test": {
+    "username": "admin",
+    "password": "password",
+    "database": "simplewallet",
+    "host": "simplewallet.ch8k2cbrcaqx.ap-southeast-1.rds.amazonaws.com",
+    "dialect": "mariadb"
+  },
+  "production": {
+    "username": "admin",
+    "password": "password",
+    "database": "simplewallet",
+    "host": "simplewallet.ch8k2cbrcaqx.ap-southeast-1.rds.amazonaws.com",
+    "dialect": "mariadb"
+  }
+}
