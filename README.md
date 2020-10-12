@@ -18,10 +18,24 @@
     - JSON { "currency" : ชื่อ Cryptocurrency }
   - Admin can manage exchange rate between cryptocurrency.
     - use **POST** https://ee4z9lcs79.execute-api.ap-southeast-1.amazonaws.com/latest/api/exchangerate/create
-    - JSON { "crypto_id" : ไอดีของ Crypto ตั้งต้น , "tocrypto_id" : ไอดีของ Crypto ปลายทาง, "rate" : อัตราการแลกเปลี่ยน }
+    - JSON { "crypto_id" : ไอดีของ Crypto ตั้งต้น, "tocrypto_id" : ไอดีของ Crypto ปลายทาง, "rate" : อัตราการแลกเปลี่ยน }
     - use **PATCH** https://ee4z9lcs79.execute-api.ap-southeast-1.amazonaws.com/latest/api/exchangerate/update
-    - JSON { "crypto_id" : ไอดีของ Crypto ตั้งต้น , "tocrypto_id" : ไอดีของ Crypto ปลายทาง, "rate" : อัตราการแลกเปลี่ยนที่ต้องการเปลี่ยนแปลง }
+    - JSON { "crypto_id" : ไอดีของ Crypto ตั้งต้น, "tocrypto_id" : ไอดีของ Crypto ปลายทาง, "rate" : อัตราการแลกเปลี่ยนที่ต้องการเปลี่ยนแปลง }
   - User can transfer cryptocurrency to other.
   - User can transfer cryptocurrency to other with difference currency such ETH to BTC with exchange rate.
     - use **PATCH** https://ee4z9lcs79.execute-api.ap-southeast-1.amazonaws.com/latest/api/wallet/transfer
-    - JSON { "from_wallet_id" : ไอดีของ Wallet ตั้งต้น , "to_wallet_id" : ไอดีของ Wallet ปลายทาง, "amount" : จำนวนที่จะโอนจาก Wallet ตั้งต้น }
+    - JSON { "from_wallet_id" : ไอดีของ Wallet ตั้งต้น, "to_wallet_id" : ไอดีของ Wallet ปลายทาง, "amount" : จำนวนที่จะโอนจาก Wallet ตั้งต้น }
+  - Get all cryptocurenncy
+    - use **GET** https://ee4z9lcs79.execute-api.ap-southeast-1.amazonaws.com/latest/api/cryptos
+  - Get all users
+    - use **GET** https://ee4z9lcs79.execute-api.ap-southeast-1.amazonaws.com/latest/api/users
+  - Get all wallets
+    - use **GET** https://ee4z9lcs79.execute-api.ap-southeast-1.amazonaws.com/latest/api/wallets
+  - Get all exchangerates
+    - use **GET** https://ee4z9lcs79.execute-api.ap-southeast-1.amazonaws.com/latest/api/exchangerates
+  - Create user
+    - use **POST** https://ee4z9lcs79.execute-api.ap-southeast-1.amazonaws.com/latest/api/user/create
+    - JSON { "name" : ชื่อ }
+  - Crate wallet
+    - use **POST** https://ee4z9lcs79.execute-api.ap-southeast-1.amazonaws.com/latest/api/wallet/create
+    - JSON { "crypto_id" : ไอดีของ Cryptocurrency ที่ต้องการ , "user_id" : ไอดี User เจ้าของ Wallet, "balance" : จำนวนคงเหลือ }
